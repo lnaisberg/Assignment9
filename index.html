@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Halloween Characters</title>
+	<link rel="stylesheet" type="text/css" href="stylesheet/style.css">
+</head>
+<body>
+
+	<h1>Press any key!</h1>
+	<div>
+		<div class="inner">
+			<img src="images/0.png">
+		</div>
+		<div class="inner">
+			<img src="images/1.png">
+		</div>
+		<div class="inner">
+			<img src="images/2.png">
+		</div>
+		<div class="inner">
+			<img src="images/3.png">
+		</div>
+		<div class="inner">
+			<img src="images/4.png">
+		</div>
+	</div>
+	
+
+	<script type="text/javascript">
+
+
+		document.addEventListener("keypress", function(event) 
+		{
+			
+			console.log(event);
+
+				var divs = document.getElementsByClassName("inner");
+				var colors = ['#ce6621', '#a35b2c', '#ed813b', '#c64f01', '#db9f60'];
+
+				for(var i = 0; i<colors.length; i++)
+				{
+					divs[i].style.backgroundColor = colors[i];
+				}
+
+		});
+	</script>
+
+</body>
+</html>
